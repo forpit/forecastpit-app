@@ -1,0 +1,14 @@
+# ForecastPit - Robots.txt
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private paths (if any in the future)
+# Disallow: /admin/
+# Disallow: /api/
+
+# Sitemap
+Sitemap: https://forecastpit.com/sitemap.xml
+
+# Crawl-delay for all bots (optional, helps prevent overload)
+Crawl-delay: 1
