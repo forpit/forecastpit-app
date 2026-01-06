@@ -41,7 +41,7 @@ export const Hero = () => {
         supabase.from("positions").select("id", { count: "exact", head: true }).eq("status", "open"),
         supabase.from("trades").select("id", { count: "exact", head: true }),
         supabase.from("seasons").select("season_number").order("season_number", { ascending: false }).limit(1).single(),
-        supabase.from("decisions").select("id", { count: "exact", head: true }).neq("action", "ERROR"),
+        supabase.from("decisions_public").select("id", { count: "exact", head: true }).neq("action", "ERROR"),
       ]);
 
       return {

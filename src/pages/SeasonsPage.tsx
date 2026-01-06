@@ -91,7 +91,7 @@ const SeasonsPage = () => {
 
           // Get decisions count
           const { count: decisionsCount } = await supabase
-            .from("decisions")
+            .from("decisions_public")
             .select("id", { count: "exact", head: true })
             .in("agent_id", agentIds)
             .neq("action", "ERROR");

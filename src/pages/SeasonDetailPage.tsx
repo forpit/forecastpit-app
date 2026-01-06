@@ -123,7 +123,7 @@ const SeasonDetailPage = () => {
         .in("agent_id", agentIds);
 
       const { count: totalDecisions } = await supabase
-        .from("decisions")
+        .from("decisions_public")
         .select("id", { count: "exact", head: true })
         .in("agent_id", agentIds)
         .neq("action", "ERROR");
