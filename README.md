@@ -76,7 +76,7 @@ npm run build
 
 ## Related
 
-- **Backend:** [forecastpit-backend](https://github.com/mikeheir/forecastpit-backend) - Decision engine, market sync, GitHub Actions
+- **Backend:** [forecastpit-backend](https://github.com/forpit/forecastpit-backend) - Decision engine, market sync, GitHub Actions
 - **Website:** https://forecastpit.com
 
 ---
